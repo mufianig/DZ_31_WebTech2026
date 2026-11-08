@@ -3,32 +3,37 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Header from './Header'
+import Technology from './Technology'
+import Footer from './Footer'
 
 function App() {
-
- function Header(){
-  return(
-    <div>
-      <h1>Header WebTech</h1>
-    </div>
-  )
- }
-function Footer() {
-  return (
-    <footer>
-      <p>Projekt React</p>
-    </footer>
-  );
-}
 
    return (
     <>
     <Header/>
-    <Header/>
-    <Header/>
-    <Header/>
-    <h2>Technologie</h2>
-    <Footer></Footer>
+    
+    <main>
+        <Technology
+          name="React"
+          category="Frontend"
+          hours={30}
+        />
+
+        <Technology
+          name="Node.js"
+          category="Backend"
+          hours={40}
+        />
+
+        <Technology
+          name="MySQL"
+          category="Baza danych"
+          hours={20}
+        />
+    </main>
+    
+    <Footer/>
     </>
   );
 }

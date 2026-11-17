@@ -26,14 +26,17 @@ function App() {
     <Header/>
     
     <main>
-        {technologies.map(technology => (
-          <Technology
-          key={technology.id}
-          name={technology.name}
-          category={technology.category}
-          hours={technology.hours}
-          image={technology.image}/>
-        ))}
+        <div className="technology-grid">
+            {technologies.map((technology) => (
+            <Technology
+              key={technology.id}
+              name={technology.name}
+              category={technology.category}
+              hours={technology.hours}
+              image={technology.image}
+    />
+  ))}
+</div>
     </main>
     
     <Footer/>
